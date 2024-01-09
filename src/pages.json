@@ -7,7 +7,10 @@
     {
       "path": "pages/hi",
       "type": "page",
-      "layout": "home"
+      "layout": "home",
+      "style": {
+        "navigationStyle": "default"
+      }
     }
   ],
   "globalStyle": {

@@ -1,4 +1,6 @@
-<script lang="ts" setup>
+<script setup>
+import { useQuery } from '@/composables/useQuery'
+
 const { value: name } = useQuery('name')
 </script>
 
@@ -6,10 +8,15 @@ const { value: name } = useQuery('name')
   <view>{{ name }}</view>
 
   <HiCounter />
+
+  <AppTest />
 </template>
 
 <route lang="json">
 {
-  "layout": "home"
+  "layout": "home",
+  "style": {
+    "navigationStyle": "default"
+  }
 }
 </route>

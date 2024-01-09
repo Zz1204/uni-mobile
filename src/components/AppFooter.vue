@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup>
 function handleClickGithub() {
   if (window?.open) {
     window.open('https://github.com/uni-helper/vitesse-uni-app')

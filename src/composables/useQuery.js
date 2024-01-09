@@ -1,7 +1,5 @@
-import type { MaybeRef } from '@vueuse/core'
-
-export function useQuery(key?: MaybeRef<string>) {
-  const query = ref<AnyObject>({})
+export function useQuery(key) {
+  const query = ref({})
   onLoad((q) => {
     query.value = q || {}
   })
