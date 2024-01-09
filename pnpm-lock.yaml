@@ -47,15 +47,21 @@ dependencies:
   '@dcloudio/uni-quickapp-webview':
     specifier: 3.0.0-3090920231225001
     version: registry.npmmirror.com/@dcloudio/uni-quickapp-webview@3.0.0-3090920231225001(postcss@8.4.31)(vue@3.3.8)
+  '@uni-helper/uni-network':
+    specifier: ^0.18.0
+    version: registry.npmmirror.com/@uni-helper/uni-network@0.18.0(@vueuse/core@10.5.0)(vue@3.3.8)
   '@vueuse/core':
     specifier: ^10.5.0
     version: 10.5.0(vue@3.3.8)
+  lodash-es:
+    specifier: ^4.17.21
+    version: registry.npmmirror.com/lodash-es@4.17.21
+  pinia:
+    specifier: ^2.0.36
+    version: registry.npmmirror.com/pinia@2.0.36(typescript@5.2.2)(vue@3.3.8)
   vue:
     specifier: ^3.3.8
     version: 3.3.8(typescript@5.2.2)
-  vue-i18n:
-    specifier: ^9.6.5
-    version: 9.6.5(vue@3.3.8)
 
 devDependencies:
   '@dcloudio/types':
@@ -568,14 +574,6 @@ packages:
       '@intlify/vue-devtools': registry.npmmirror.com/@intlify/vue-devtools@9.1.9
     dev: true
 
-  /@intlify/core-base@9.6.5:
-    resolution: {integrity: sha512-LzbGXiZkMWPIHnHI0g6q554S87Cmh2mmCmjytK/3pDQfjI84l+dgGoeQuKj02q7EbULRuUUgYVZVqAwEUawXGg==}
-    engines: {node: '>= 16'}
-    dependencies:
-      '@intlify/message-compiler': 9.6.5
-      '@intlify/shared': 9.6.5
-    dev: false
-
   /@intlify/devtools-if@9.1.9:
     resolution: {integrity: sha512-oKSMKjttG3Ut/1UGEZjSdghuP3fwA15zpDPcjkf/1FjlOIm6uIBGMNS5jXzsZy593u+P/YcnrZD6cD3IVFz9vQ==}
     engines: {node: '>= 10'}
@@ -591,14 +589,6 @@ packages:
       '@intlify/shared': registry.npmmirror.com/@intlify/shared@9.1.9
       source-map: registry.npmmirror.com/source-map@0.6.1
     dev: true
-
-  /@intlify/message-compiler@9.6.5:
-    resolution: {integrity: sha512-WeJ499thIj0p7JaIO1V3JaJbqdqfBykS5R8fElFs5hNeotHtPAMBs4IiA+8/KGFkAbjJusgFefCq6ajP7F7+4Q==}
-    engines: {node: '>= 16'}
-    dependencies:
-      '@intlify/shared': 9.6.5
-      source-map-js: 1.0.2
-    dev: false
 
   /@intlify/message-resolver@9.1.9:
     resolution: {integrity: sha512-Lx/DBpigeK0sz2BBbzv5mu9/dAlt98HxwbG7xLawC3O2xMF9MNWU5FtOziwYG6TDIjNq0O/3ZbOJAxwITIWXEA==}
@@ -618,11 +608,6 @@ packages:
     resolution: {integrity: sha512-xKGM1d0EAxdDFCWedcYXOm6V5Pfw/TMudd6/qCdEb4tv0hk9EKeg7lwQF1azE0dP2phvx0yXxrt7UQK+IZjNdw==}
     engines: {node: '>= 10'}
     dev: true
-
-  /@intlify/shared@9.6.5:
-    resolution: {integrity: sha512-gD7Ey47Xi4h/t6P+S04ymMSoA3wVRxGqjxuIMglwRO8POki9h164Epu2N8wk/GHXM/hR6ZGcsx2HArCCENjqSQ==}
-    engines: {node: '>= 16'}
-    dev: false
 
   /@intlify/vue-devtools@9.1.9:
     resolution: {integrity: sha512-YPehH9uL4vZcGXky4Ev5qQIITnHKIvsD2GKGXgqf+05osMUI6WSEQHaN9USRa318Rs8RyyPCiDfmA0hRu3k7og==}
@@ -1697,10 +1682,6 @@ packages:
     dependencies:
       '@vue/compiler-dom': registry.npmmirror.com/@vue/compiler-dom@3.3.8
       '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.8
-
-  /@vue/devtools-api@6.5.1:
-    resolution: {integrity: sha512-+KpckaAQyfbvshdDW5xQylLni1asvNSGme1JFs8I1+/H5pHEhqUKMEQD/qn3Nx5+/nycBq11qAEi8lk+LXI2dA==}
-    dev: false
 
   /@vue/reactivity-transform@3.2.47:
     resolution: {integrity: sha512-m8lGXw8rdnPVVIdIFhf0LeQ/ixyHkH5plYuS83yop5n7ggVJU+z5v0zecwEnX7fa7HNLBhh2qngJJkxpwEEmYA==}
@@ -3340,7 +3321,7 @@ packages:
       escape-html: 1.0.3
       on-finished: 2.4.1
       parseurl: 1.3.3
-      statuses: 2.0.1
+      statuses: registry.npmmirror.com/statuses@2.0.1
       unpipe: 1.0.0
     transitivePeerDependencies:
       - supports-color
@@ -3636,7 +3617,7 @@ packages:
       depd: 2.0.0
       inherits: 2.0.4
       setprototypeof: 1.2.0
-      statuses: 2.0.1
+      statuses: registry.npmmirror.com/statuses@2.0.1
       toidentifier: 1.0.1
     dev: true
 
@@ -5039,7 +5020,7 @@ packages:
       ms: 2.1.3
       on-finished: 2.4.1
       range-parser: 1.2.1
-      statuses: 2.0.1
+      statuses: registry.npmmirror.com/statuses@2.0.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5709,18 +5690,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
-
-  /vue-i18n@9.6.5(vue@3.3.8):
-    resolution: {integrity: sha512-dpUEjKHg7pEsaS7ZPPxp1CflaR7bGmsvZJEhnszHPKl9OTNyno5j/DvMtMSo41kpddq4felLA7GK2prjpnXVlw==}
-    engines: {node: '>= 16'}
-    peerDependencies:
-      vue: ^3.0.0
-    dependencies:
-      '@intlify/core-base': 9.6.5
-      '@intlify/shared': 9.6.5
-      '@vue/devtools-api': 6.5.1
-      vue: 3.3.8(typescript@5.2.2)
-    dev: false
 
   /vue@3.3.8(typescript@5.2.2):
     resolution: {integrity: sha512-5VSX/3DabBikOXMsxzlW8JyfeLKlG9mzqnWgLQLty88vdZL7ZJgrdgBOmrArwxiLtmS+lNNpPcBYqrhE6TQW5w==}
@@ -7369,6 +7338,12 @@ packages:
     name: '@bcoe/v8-coverage'
     version: 0.2.3
     dev: true
+
+  registry.npmmirror.com/@dcloudio/types@3.4.3:
+    resolution: {integrity: sha512-WzQGX06z2+HU3HnOO+/DxX37jyUECSXCuI7GVjFXs10+ZExTbdouwQXZvH8hR7k/FjuXFjQKHV9fuvfexyXluw==, tarball: https://registry.npmmirror.com/@dcloudio/types/-/types-3.4.3.tgz}
+    name: '@dcloudio/types'
+    version: 3.4.3
+    dev: false
 
   registry.npmmirror.com/@dcloudio/uni-app-plus@3.0.0-3090920231225001(@vueuse/core@10.5.0)(postcss@8.4.31)(vite@4.0.3)(vue@3.3.8):
     resolution: {integrity: sha512-TCzWHbwuheEBSzpTqpHh/imhj4Rkwdg48m9C7ZLqun5runI056TEUdrpfuLBVuwsttk5NSpqm11ywS7GSSM7Mg==, tarball: https://registry.npmmirror.com/@dcloudio/uni-app-plus/-/uni-app-plus-3.0.0-3090920231225001.tgz}
@@ -9780,11 +9755,18 @@ packages:
       '@types/lodash': registry.npmmirror.com/@types/lodash@4.14.200
     dev: true
 
+  registry.npmmirror.com/@types/lodash.merge@4.6.9:
+    resolution: {integrity: sha512-23sHDPmzd59kUgWyKGiOMO2Qb9YtqRO/x4IhkgNUiPQ1+5MUVqi6bCZeq9nBJ17msjIMbEIO5u+XW4Kz6aGUhQ==, tarball: https://registry.npmmirror.com/@types/lodash.merge/-/lodash.merge-4.6.9.tgz}
+    name: '@types/lodash.merge'
+    version: 4.6.9
+    dependencies:
+      '@types/lodash': registry.npmmirror.com/@types/lodash@4.14.200
+    dev: false
+
   registry.npmmirror.com/@types/lodash@4.14.200:
     resolution: {integrity: sha512-YI/M/4HRImtNf3pJgbF+W6FrXovqj+T+/HpENLTooK9PnkacBsDpeP3IpHab40CClUfhNmdM2WTNP2sa2dni5Q==, tarball: https://registry.npmmirror.com/@types/lodash/-/lodash-4.14.200.tgz}
     name: '@types/lodash'
     version: 4.14.200
-    dev: true
 
   registry.npmmirror.com/@types/node@20.9.0:
     resolution: {integrity: sha512-nekiGu2NDb1BcVofVcEKMIwzlx4NjHlcjhoxxKBNLtz15Y1z7MYf549DFvkHSId02Ax6kGwWntIBPC3l/JZcmw==, tarball: https://registry.npmmirror.com/@types/node/-/node-20.9.0.tgz}
@@ -9806,6 +9788,12 @@ packages:
     version: 2.0.2
     dev: true
 
+  registry.npmmirror.com/@types/statuses@2.0.4:
+    resolution: {integrity: sha512-eqNDvZsCNY49OAXB0Firg/Sc2BgoWsntsLUdybGFOhAfCD6QJ2n9HXUIHGqt5qjrxmMv4wS8WLAw43ZkKcJ8Pw==, tarball: https://registry.npmmirror.com/@types/statuses/-/statuses-2.0.4.tgz}
+    name: '@types/statuses'
+    version: 2.0.4
+    dev: false
+
   registry.npmmirror.com/@types/yargs-parser@21.0.2:
     resolution: {integrity: sha512-5qcvofLPbfjmBfKaLfj/+f+Sbd6pN4zl7w7VSVI5uz7m9QZTuB2aZAa2uo1wHFBNN2x6g/SoTkXmd8mQnQF2Cw==, tarball: https://registry.npmmirror.com/@types/yargs-parser/-/yargs-parser-21.0.2.tgz}
     name: '@types/yargs-parser'
@@ -9819,6 +9807,35 @@ packages:
     dependencies:
       '@types/yargs-parser': registry.npmmirror.com/@types/yargs-parser@21.0.2
     dev: true
+
+  registry.npmmirror.com/@uni-helper/uni-network@0.18.0(@vueuse/core@10.5.0)(vue@3.3.8):
+    resolution: {integrity: sha512-HzjOAdUIuEmw1rKSladZPFfE/P6BqbHwrhSuhgEqEus7Cixo5ZKF6cW0WbRq5pzzJIFRcrsjh4V2+kH2/1fF8Q==, tarball: https://registry.npmmirror.com/@uni-helper/uni-network/-/uni-network-0.18.0.tgz}
+    id: registry.npmmirror.com/@uni-helper/uni-network/0.18.0
+    name: '@uni-helper/uni-network'
+    version: 0.18.0
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0
+      '@vueuse/core': ^9.0.0 || ^10.0.0
+      vue: ^2.6.0 || ^2.7.0 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      '@vueuse/core':
+        optional: true
+      vue:
+        optional: true
+    dependencies:
+      '@dcloudio/types': registry.npmmirror.com/@dcloudio/types@3.4.3
+      '@types/lodash.merge': registry.npmmirror.com/@types/lodash.merge@4.6.9
+      '@types/statuses': registry.npmmirror.com/@types/statuses@2.0.4
+      '@vueuse/core': 10.5.0(vue@3.3.8)
+      fast-querystring: registry.npmmirror.com/fast-querystring@1.1.2
+      lodash.merge: registry.npmmirror.com/lodash.merge@4.6.2
+      statuses: registry.npmmirror.com/statuses@2.0.1
+      vue: 3.3.8(typescript@5.2.2)
+      vue-demi: registry.npmmirror.com/vue-demi@0.14.6(vue@3.3.8)
+    dev: false
 
   registry.npmmirror.com/@vitejs/plugin-legacy@4.1.1(terser@5.22.0)(vite@4.0.3):
     resolution: {integrity: sha512-um3gbVouD2Q/g19C0qpDfHwveXDCAHzs8OC3e9g6aXpKoD1H14himgs7wkMnhAynBJy7QqUoZNAXDuqN8zLR2g==, tarball: https://registry.npmmirror.com/@vitejs/plugin-legacy/-/plugin-legacy-4.1.1.tgz}
@@ -11391,6 +11408,12 @@ packages:
       - supports-color
     dev: true
 
+  registry.npmmirror.com/fast-decode-uri-component@1.0.1:
+    resolution: {integrity: sha512-WKgKWg5eUxvRZGwW8FvfbaH7AXSh2cL+3j5fMGzUMCxWBJ3dV3a7Wz8y2f/uQ0e3B6WmodD3oS54jTQ9HVTIIg==, tarball: https://registry.npmmirror.com/fast-decode-uri-component/-/fast-decode-uri-component-1.0.1.tgz}
+    name: fast-decode-uri-component
+    version: 1.0.1
+    dev: false
+
   registry.npmmirror.com/fast-glob@3.3.1:
     resolution: {integrity: sha512-kNFPyjhh5cKjrUltxs+wFx+ZkbRaxxmZ+X0ZU31SOsxCEtP9VPgtq2teZw1DebupL5GmDaNQ6yKMMVcM41iqDg==, tarball: https://registry.npmmirror.com/fast-glob/-/fast-glob-3.3.1.tgz}
     name: fast-glob
@@ -11408,6 +11431,14 @@ packages:
     name: fast-json-stable-stringify
     version: 2.1.0
     dev: true
+
+  registry.npmmirror.com/fast-querystring@1.1.2:
+    resolution: {integrity: sha512-g6KuKWmFXc0fID8WWH0jit4g0AGBoJhCkJMb1RmbsSEUNvQ+ZC8D6CUZ+GtF8nMzSPXnhiePyyqqipzNNEnHjg==, tarball: https://registry.npmmirror.com/fast-querystring/-/fast-querystring-1.1.2.tgz}
+    name: fast-querystring
+    version: 1.1.2
+    dependencies:
+      fast-decode-uri-component: registry.npmmirror.com/fast-decode-uri-component@1.0.1
+    dev: false
 
   registry.npmmirror.com/fastq@1.15.0:
     resolution: {integrity: sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==, tarball: https://registry.npmmirror.com/fastq/-/fastq-1.15.0.tgz}
@@ -12699,7 +12730,6 @@ packages:
     resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==, tarball: https://registry.npmmirror.com/lodash-es/-/lodash-es-4.17.21.tgz}
     name: lodash-es
     version: 4.17.21
-    dev: true
 
   registry.npmmirror.com/lodash.camelcase@4.3.0:
     resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==, tarball: https://registry.npmmirror.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz}
@@ -12711,6 +12741,12 @@ packages:
     name: lodash.debounce
     version: 4.0.8
     dev: true
+
+  registry.npmmirror.com/lodash.merge@4.6.2:
+    resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==, tarball: https://registry.npmmirror.com/lodash.merge/-/lodash.merge-4.6.2.tgz}
+    name: lodash.merge
+    version: 4.6.2
+    dev: false
 
   registry.npmmirror.com/lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==, tarball: https://registry.npmmirror.com/lodash/-/lodash-4.17.21.tgz}
@@ -13197,6 +13233,27 @@ packages:
     name: pify
     version: 2.3.0
     engines: {node: '>=0.10.0'}
+
+  registry.npmmirror.com/pinia@2.0.36(typescript@5.2.2)(vue@3.3.8):
+    resolution: {integrity: sha512-4UKApwjlmJH+VuHKgA+zQMddcCb3ezYnyewQ9NVrsDqZ/j9dMv5+rh+1r48whKNdpFkZAWVxhBp5ewYaYX9JcQ==, tarball: https://registry.npmmirror.com/pinia/-/pinia-2.0.36.tgz}
+    id: registry.npmmirror.com/pinia/2.0.36
+    name: pinia
+    version: 2.0.36
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': registry.npmmirror.com/@vue/devtools-api@6.5.1
+      typescript: registry.npmmirror.com/typescript@5.2.2
+      vue: 3.3.8(typescript@5.2.2)
+      vue-demi: registry.npmmirror.com/vue-demi@0.14.6(vue@3.3.8)
+    dev: false
 
   registry.npmmirror.com/pirates@4.0.6:
     resolution: {integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==, tarball: https://registry.npmmirror.com/pirates/-/pirates-4.0.6.tgz}
@@ -13864,7 +13921,6 @@ packages:
     name: statuses
     version: 2.0.1
     engines: {node: '>= 0.8'}
-    dev: true
 
   registry.npmmirror.com/std-env@3.4.3:
     resolution: {integrity: sha512-f9aPhy8fYBuMN+sNfakZV18U39PbalgjXG3lLB9WkaYTxijru61wb57V9wxxNthXM5Sd88ETBWi29qLAsHO52Q==, tarball: https://registry.npmmirror.com/std-env/-/std-env-3.4.3.tgz}
@@ -14511,6 +14567,24 @@ packages:
       - supports-color
       - terser
     dev: true
+
+  registry.npmmirror.com/vue-demi@0.14.6(vue@3.3.8):
+    resolution: {integrity: sha512-8QA7wrYSHKaYgUxDA5ZC24w+eHm3sYCbp0EzcDwKqN3p6HqtTCGR/GVsPyZW92unff4UlcSh++lmqDWN3ZIq4w==, tarball: https://registry.npmmirror.com/vue-demi/-/vue-demi-0.14.6.tgz}
+    id: registry.npmmirror.com/vue-demi/0.14.6
+    name: vue-demi
+    version: 0.14.6
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      vue: 3.3.8(typescript@5.2.2)
+    dev: false
 
   registry.npmmirror.com/vue-router@4.2.5(vue@3.3.8):
     resolution: {integrity: sha512-DIUpKcyg4+PTQKfFPX88UWhlagBEBEfJ5A8XDXRJLUnZOvcpMF8o/dnL90vpVkGaPbjvXazV/rC1qBKrZlFugw==, tarball: https://registry.npmmirror.com/vue-router/-/vue-router-4.2.5.tgz}

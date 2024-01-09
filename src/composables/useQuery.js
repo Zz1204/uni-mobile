@@ -1,3 +1,6 @@
+import { computed, ref, unref } from 'vue'
+import { onLoad } from '@dcloudio/uni-app'
+
 export function useQuery(key) {
   const query = ref({})
   onLoad((q) => {

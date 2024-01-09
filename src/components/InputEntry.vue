@@ -1,4 +1,6 @@
 <script setup>
+import { ref } from 'vue'
+
 const name = ref('')
 function go() {
   if (name.value) {
