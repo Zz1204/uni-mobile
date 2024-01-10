@@ -1,9 +1,3 @@
-<script setup>
-import { useCount } from '@/composables/useCount'
-
-const { count, inc, dec } = useCount()
-</script>
-
 <template>
   <view inline-flex m="y-3">
     <view class="btn" @click="dec()">
@@ -17,6 +11,12 @@ const { count, inc, dec } = useCount()
     </view>
   </view>
 </template>
+
+<script setup>
+import { useCount } from '@/composables/useCount'
+
+const { count, inc, dec } = useCount()
+</script>
 
 <style>
 .btn {

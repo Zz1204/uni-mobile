@@ -1,7 +1,3 @@
-<script setup>
-import AppFooter from '@/components/AppFooter.vue'
-</script>
-
 <template>
   <view class="px-10 py-20 text-center">
     <slot />
@@ -11,3 +7,7 @@ import AppFooter from '@/components/AppFooter.vue'
     </view>
   </view>
 </template>
+
+<script setup>
+import AppFooter from '@/components/AppFooter.vue'
+</script>

@@ -1,16 +1,3 @@
-<script setup>
-import { ref } from 'vue'
-
-const name = ref('')
-function go() {
-  if (name.value) {
-    uni.navigateTo({
-      url: `/pages/hi?name=${name.value}`,
-    })
-  }
-}
-</script>
-
 <template>
   <view>
     <view
@@ -29,3 +16,16 @@ function go() {
     </view>
   </view>
 </template>
+
+<script setup>
+import { ref } from 'vue'
+
+const name = ref('')
+function go() {
+  if (name.value) {
+    uni.navigateTo({
+      url: `/pages/hi?name=${name.value}`,
+    })
+  }
+}
+</script>

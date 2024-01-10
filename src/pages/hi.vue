@@ -1,3 +1,10 @@
+<template>
+  <view>{{ name }}</view>
+
+  <HiCounter />
+  <AppTest />
+</template>
+
 <script setup>
 import { useQuery } from '@/composables/useQuery'
 import HiCounter from '@/components/HiCounter.vue'
@@ -11,16 +18,9 @@ async function getData() {
 
   console.log(data)
 }
+
 getData()
 </script>
-
-<template>
-  <view>{{ name }}</view>
-
-  <HiCounter />
-
-  <AppTest />
-</template>
 
 <route lang="json">
 {
